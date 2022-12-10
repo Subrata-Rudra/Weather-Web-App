@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(177, 185, 122);
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('image/background_img.jpg');
+    background-size: cover;
+}
+
+.card{
+    background: #043763c4;
+    color: white;
+    padding: 2rem;
+    margin: 1em;
+    border-radius: 2rem;
+    width: 100%;
+    max-width: 440px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin: 0.5em;
+    border: none;
+    border-radius: 0.7em;
+    outline: none;
+    height: 2.3em;
+    width: 3.3em;
+    color: white;
+    font-size: 120%;
+}
+
+.search button:hover{
+    cursor: pointer;
+    background-color: rgb(161, 232, 131);
+    transition: 0.2s ease-in-out;
+}
+
+.search input{
+    border: none;
+    outline: none;
+    height: 2.3em;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 0.7em;
+    font-size: 105%;
+    font-family: inherit;
+    color: white;
+    padding: 0.25em 1.7em;
+    background-color: #1f2020c4;
+}
+
+.temp{
+    margin: 0;
+    margin-bottom: 0.3em;
+}
+
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.weather .loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather .loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+/* For phone */
+@media only screen and (max-width: 360px){
+    h2{
+        font-size: 15px;
+    }
+    .temp{
+        font-size: 22px;
+    }
+    .card{
+        padding: 1rem;
+    }
+    .humidity{
+        padding: 1rem 0;
+        font-size: 14px;
+    }
+    .temp{
+        font-size: 1rem;
+    }
+    .description{
+        font-size: 14px;
+    }
+    .wind{
+        font-size: 13px;
+    }
+    .search input{
+        font-size: 16px;
+        padding: 0.1rem 1rem;
+    }
+    button{
+        font-size: 100%;
+    }
+}

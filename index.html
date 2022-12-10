@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="/image//weather-icon.webp">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Open+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button><img src="/image/icons8-search.svg" alt="search-icon"></button>
+        </div>
+        <div class="weather loading">
+            <h2 class="city">Wather in Sonamukhi</h2>
+            <h1 class="temp">38°C</h1>
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon">
+                <div class="description">Partly Cloudy</div>
+            </div>
+            <div class="humidity">Humidity: 42%</div>
+            <div class="wind">Wind speed: 6.8 km/hr</div>
+        </div>
+    </div>
+</body>
+</html>
